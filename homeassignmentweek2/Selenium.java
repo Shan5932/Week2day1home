@@ -25,7 +25,8 @@ public class Selenium {
 		driver.findElement(By.id("createLeadForm_generalProfTitle")).sendKeys("testleaf");
 		driver.findElement(By.name("generalProfTitle")).sendKeys("Welcome to test");
 		driver.findElement(By.name("submitButton")).click();
-		driver.getTitle();
+		String title=driver.getTitle();
+		System.out.println("the page title is:"+title);
 		driver.close();
 		}
 
