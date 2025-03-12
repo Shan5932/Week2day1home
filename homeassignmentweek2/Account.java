@@ -22,7 +22,8 @@ public class Account {
 		driver.findElement(By.id("numberEmployees")).sendKeys("5");
 		driver.findElement(By.id("officeSiteName")).sendKeys("LeafTaps");
 		driver.findElement(By.className("smallSubmit")).click();
-		driver.getTitle();
+		String title=driver.getTitle();
+		System.out.println("page tile is:"+title);
 		driver.close();
 		
 	}
